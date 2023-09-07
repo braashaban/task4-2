@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+
+
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    height: 100vh;
+    background-image: url(../img/istockphoto-1358014313-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .main-header {
+    background-color: rgba(0, 0, 255, 0.561);
+    height: 100vh;
+}
+
+header .top-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.461);
+}
+
+@media(max-width:1000px) {
+    .navbar .btn {
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    header .top-nav span {
+        display: none;
+    }
+
+
+}
+
+header .navbar {
+    background-color: none;
+    color: white;
+    z-index: 4111;
+}
+
+header .navbar-brand {
+    font-size: 28px;
+    font-weight: 600;
+    transition: 1.5s all ease-out;
+}
+
+header .navbar-nav {
+    text-align: center;
+}
+
+header .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 15px;
+}
+
+header .navbar-nav .nav-item:hover {
+    border-bottom: 1px solid #fff;
+
+}
+
+.btn-22 {
+    background-color: deepskyblue;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.8s all;
+}
+
+.btn-22:hover {
+    background-color: #fff;
+    color: deepskyblue;
+}
+
+header .navbar .nav-link {
+    color: rgba(255, 255, 255, 0.661);
+    transition: 0.5s all ease-in;
+}
+header .navbar .nav-link:hover {
+    color: white;
+    border-bottom: 1px solid #fff;
+}
+/* start the hero */
+.hero {
+    padding-top: 150px;
+    color: #fff;
+}
+.hero p {
+    font-size: 20px;
+    letter-spacing: 2;
+}
+.hero .btn-33 {
+    background-color: deepskyblue;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 180px;
+    transition: 0.8s all;
+}
+.hero .btn-33:hover {
+    background-color: #fff;
+    color: deepskyblue;
+}
+/* end the hero */
+
+/*  start catagory */
+.catagory {
+    padding-top: 50px;
+}
+.catagory .head {
+    color: rgba(0, 64, 255, 0.929);
+}
+.catagory .content {
+    background-color: rgba(0, 191, 255, 0.109);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+.catagory .content:hover{
+    background-color: #dddd;
+    }
+.catagory .content .icons {
+    background-color: white;
+    padding: 10px;
+    height: 42px;
+    border-radius: 10px;
+}
+.catagory .content .icons .icon {
+    font-size: 25px;
+    color: deepskyblue;
+}
+
+.news {
+    background-color: rgba(128, 128, 128, 0.228);
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.news .imges img {
+    position: relative;
+    top: -120px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    padding: 5px
+}
+
+/* the layer above the card */
+
+.news  .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 140, 0, 0.354);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
+.card:hover .overlay {
+
+transform: scale(1);
+}
+.news .btn{
+    transition: 0.8s all;
+    font-weight: 600;
+    border: none;
+}
+.news .btn:hover {
+    background-color: #fff;
+    color: deepskyblue;
+}
+
+
+.educatio .card,.course .card {
+    border: none;
+    border-radius: 20px;
+}
+/* the layer above the card */
+.educatio  .overlay
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #007bff39;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .5s ease;
+    border-radius: 20px;
+}
+.card:hover .overlay {
+transform: scale(1);
+}
+.dollar{
+    border-top: 1px solid #ddd;
+}
+.course .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #007bff39;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .5s ease;
+    border-radius: 20px; 
+}
+
+.learn-bg {
+    background-image: url(../img/istockphoto-1411454425-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.learn-bg .main-learn {
+    background-color: rgba(0, 0, 255, 0.561);
+    height: 100vh;
+    padding-top: 150px;
+    margin: auto;
+}
+.learn-bg .btn{
+    transition: 0.8s all;
+    font-weight: bold;
+}
+.learn-bg .btn:hover{
+    background-color: #fff;
+    color: deepskyblue;
+}
+.price .justify-content-between{
+    margin:10pxئ
+}
+.about .imges video{
+    z-index: 3 !important;
+}
+.about .after{
+    background-color: rgba(0, 10, 209, 0.331);
+    width: 310px ;
+    height: 293px;
+    top: -38px;
+    left: 323px;
+z-index: -5;
+color: #dddddd26;
+}
+@media(max-width:1000px){
+    .about .after{
+        width: 200px ;
+    }
+}
+@media(max-width:700px){
+    .about .after{ display: none;
+    }
+}
+.pricing .card,
+.news .card
+{
+    border: none;
+transition: 1.2s all;
+border-radius: 20px;
+ 
+}
+.news .card:hover, .pricing .card:hover{
+    transform: translateY(-10px);
+}
+
+.pricing .card .card-body{
+    position: relative;
+
+}
+
+/* the layer above the card */
+.pricing .card .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #007bff39;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transform: scale(0);
+        transition: .3s ease;
+}
+.card:hover .overlay {
+    transform: scale(1);
+  }
+.testimoies{
+    background-color: rgba(128, 128, 128, 0.528);
+    
+}
+.sec-9{
+    background-color: #007bff;
+}
+.main-carousel{
+    width: 250px;
+
+    margin: auto;
+    margin-bottom: 50px;
+}
+.carorse-11 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 164px;
+}
+.carousel-indicators .dott{
+    border-radius:50% !important;
+    height: 20px !important;
+    width: 20px !important;
+
+}
+
+.testimoies .textt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+footer .icon{
+
+    width: 50px;
+    height: 33px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+footer .icon:hover{
+background-color: #00000091;
+
+}
+
+footer .icon .small-icon:hover{
+    color: #fff;
+}
