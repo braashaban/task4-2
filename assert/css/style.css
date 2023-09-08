@@ -28,7 +28,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.navbar-scrool{
+    background-color: #007bff;
+    color:#fff
+}
 header .main-header {
     background-color: rgba(0, 0, 255, 0.561);
     height: 100vh;
@@ -58,6 +61,10 @@ header .navbar {
     z-index: 4111;
 }
 
+.navbar-scrool{
+    background-color: #007bff;
+    color:#fff
+}
 header .navbar-brand {
     font-size: 28px;
     font-weight: 600;
