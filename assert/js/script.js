@@ -10,21 +10,19 @@ window.addEventListener('scroll',() => {
       cc.style='top : '+ d +'px !important'; 
     }
     else if(window.scrollY >= 60){
-
         /* عند السكرول لقيمة اضغر من60 اجعل قيمة توب 0 للناف  */ 
         cc.style='top : '+ 0 +'px !important';
         addd.classList.add('display')  ;
-      
     }
-
     /* اضافة الكلاس الذي يقوم بتفير الخلفية عند الوصول للقيمة 0 */
     if(window.scrollY >= 60){
         cc.classList.add('navbar-scrool');
+     
 
     } /*ايضا عند الوصول للقيمة اصغر من 60  يقوم باضافة الكلاس  الذي يحذف الديف الاول */
     else if( window.scrollY < 60){
-        addd.classList.remove('');
-       
+        addd.classList.remove('display');
+        cc.classList.remove('navbar-scrool');
        
     }
 
