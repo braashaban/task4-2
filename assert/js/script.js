@@ -1,24 +1,19 @@
 
-
-
 const cc=document.querySelector('.navbar');
 const addd=document.querySelector('.top-nav');
 
 window.addEventListener('scroll',() => {
  /* تعريف متغير */
-  
-
-    var d = 60- window.scrollY;
-
+    var d = 60 - window.scrollY;
     if( window.scrollY < 60){
     
       cc.style='top : '+ d +'px !important'; 
     }
-
     else if(window.scrollY >= 60){
 
         /* عند السكرول لقيمة اضغر من60 اجعل قيمة توب 0 للناف  */ 
-        cc.style='top : '+ 0 +'px !important';  
+        cc.style='top : '+ 0 +'px !important';
+        addd.classList.add('display')  ;
     }
 
     /* اضافة الكلاس الذي يقوم بتفير الخلفية عند الوصول للقيمة 0 */
