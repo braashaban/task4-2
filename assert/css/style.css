@@ -34,7 +34,7 @@ header .main-header {
 header .top-nav {
     border-bottom: 1px solid white;
     margin-bottom: 5px;
-   width: 100%;
+     width:100%;
 }
 
 @media(max-width:1000px) {
