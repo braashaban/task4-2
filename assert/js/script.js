@@ -13,6 +13,7 @@ window.addEventListener('scroll',() => {
 
         /* عند السكرول لقيمة اضغر من60 اجعل قيمة توب 0 للناف  */ 
         cc.style='top : '+ 0 +'px !important';
+        addd.classList.add('display')  ;
       
     }
 
@@ -22,8 +23,8 @@ window.addEventListener('scroll',() => {
 
     } /*ايضا عند الوصول للقيمة اصغر من 60  يقوم باضافة الكلاس  الذي يحذف الديف الاول */
     else if( window.scrollY < 60){
-        addd.classList.remove('top-nav');
-        addd.classList.remove('display')  ;
+        addd.classList.remove('');
+       
        
     }
 

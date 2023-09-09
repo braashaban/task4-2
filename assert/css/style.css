@@ -57,7 +57,7 @@ header .navbar {
 /* class for js  */
 .display{
     display: none !important;
-    opacity: 0;
+    opacity: 0 !important;
    
 }
 
