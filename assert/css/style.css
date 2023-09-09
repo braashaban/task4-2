@@ -8,10 +8,7 @@
 body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
-
-
 }
-
 .btn {
     font-size: 12px;
     font-weight: bold;
@@ -22,23 +19,22 @@ li {
 a {
     text-decoration: none;
 }
+
 header {
     height: 100vh;
     background-image: url(../img/istockphoto-1358014313-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.navbar-scrool{
-    background-color: #007bff;
-    color:#fff
-}
+
 header .main-header {
     background-color: rgba(0, 0, 255, 0.561);
     height: 100vh;
 }
-
 header .top-nav {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.461);
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+   width: 100%;
 }
 
 @media(max-width:1000px) {
@@ -51,20 +47,33 @@ header .top-nav {
     header .top-nav span {
         display: none;
     }
-
-
 }
-
 header .navbar {
     background-color: none;
     color: white;
-    z-index: 4111;
+    top: 60px !important;
 }
 
+/* class for js  */
+.display{
+    display: none !important;
+    opacity: 0;
+   
+}
+
+/* class for js   change the background*/
 .navbar-scrool{
     background-color: #007bff;
-    color:#fff
+    color:#fff; 
+    top: 0 !important;
 }
+/* class for js  */
+.toop{
+    top: 0 ;
+}
+
+
+
 header .navbar-brand {
     font-size: 28px;
     font-weight: 600;
@@ -78,11 +87,18 @@ header .navbar-nav {
 header .navbar-nav .nav-link {
     font-size: 18px;
     padding: 15px;
+    color: rgba(255, 255, 255, 0.661);
+    transition: 0.5s all ease-in;
 }
+
 
 header .navbar-nav .nav-item:hover {
     border-bottom: 1px solid #fff;
 
+}
+header .navbar .nav-link:hover {
+    color: white;
+    border-bottom: 1px solid #fff;
 }
 
 .btn-22 {
@@ -102,14 +118,8 @@ header .navbar-nav .nav-item:hover {
     color: deepskyblue;
 }
 
-header .navbar .nav-link {
-    color: rgba(255, 255, 255, 0.661);
-    transition: 0.5s all ease-in;
-}
-header .navbar .nav-link:hover {
-    color: white;
-    border-bottom: 1px solid #fff;
-}
+
+
 /* start the hero */
 .hero {
     padding-top: 150px;
@@ -164,6 +174,8 @@ header .navbar .nav-link:hover {
     color: deepskyblue;
 }
 
+
+/* start the section news */
 .news {
     background-color: rgba(128, 128, 128, 0.228);
     margin-top: 50px;
@@ -180,7 +192,6 @@ header .navbar .nav-link:hover {
 }
 
 /* the layer above the card */
-
 .news  .overlay{
     position: absolute;
     bottom: 0;
@@ -194,7 +205,6 @@ header .navbar .nav-link:hover {
     transition: .3s ease;
 }
 .card:hover .overlay {
-
 transform: scale(1);
 }
 .news .btn{
@@ -207,6 +217,7 @@ transform: scale(1);
     color: deepskyblue;
 }
 
+/* start the section educatio */
 
 .educatio .card,.course .card {
     border: none;
@@ -224,15 +235,17 @@ transform: scale(1);
     width: 100%;
     height: 100%;
     transform: scale(0);
-    transition: .5s ease;
+    transition: .6s ease;
     border-radius: 20px;
 }
 .card:hover .overlay {
 transform: scale(1);
 }
-.dollar{
+ .educatio .dollar{
     border-top: 1px solid #ddd;
 }
+
+/* start the section course */
 .course .overlay{
     position: absolute;
     bottom: 0;
@@ -247,6 +260,7 @@ transform: scale(1);
     border-radius: 20px; 
 }
 
+/* start the section course */
 .learn-bg {
     background-image: url(../img/istockphoto-1411454425-612x612.jpg);
     background-repeat: no-repeat;
@@ -272,7 +286,7 @@ transform: scale(1);
 }
 
 
-
+/* start the section course */
 .about .imges video{
     z-index: 3 !important;
     box-shadow:  144px -28px 2px  6px #007bff1a;
@@ -282,24 +296,6 @@ transform: scale(1);
         box-shadow:none
     }
 
-}
-/* .about .after{
-    background-color: rgba(0, 10, 209, 0.331);
-    width: 310px ;
-    height: 293px;
-    top: -38px;
-    left: 323px;
-z-index: -5;
-color: #dddddd26;
-} */
-@media(max-width:1000px){
-    .about .after{
-        width: 200px ;
-    }
-}
-@media(max-width:700px){
-    .about .after{ display: none;
-    }
 }
 .pricing .card,
 .news .card
@@ -334,45 +330,40 @@ border-radius: 20px;
 .card:hover .overlay {
     transform: scale(1);
   }
+
+
+  /* start the section testimoies */
 .testimoies{
     background-color: rgba(128, 128, 128, 0.528);
-    
+
 }
 .sec-9{
     background-color: #007bff;
 }
-.main-carousel{
+  .testimoies .main-carousel{
     width: 250px;
-
     margin: auto;
     margin-bottom: 50px;
+   
 }
-.carorse-11 img{
+ .testimoies .carorse-11 img{
     border-radius: 50%;
     width: 150px;
     height: 164px;
 }
-.carousel-indicators .dott{
+ .testimoies .carousel-indicators .dott{
     border-radius:50% !important;
     height: 20px !important;
     width: 20px !important;
-
 }
-
 .testimoies .textt{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
-
-
-
-
-
+/* start the footer */
 footer .icon{
-
     width: 50px;
     height: 33px;
     background-color: #fff;
@@ -383,9 +374,7 @@ footer .icon{
 }
 footer .icon:hover{
 background-color: #00000091;
-
 }
-
 footer .icon .small-icon:hover{
     color: #fff;
 }
