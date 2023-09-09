@@ -23,7 +23,7 @@ window.addEventListener('scroll',() => {
     else if( window.scrollY < 60){
         addd.classList.remove('display');
         cc.classList.remove('navbar-scrool');
-       
+
     }
 
 })

@@ -2,20 +2,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
+
 }
 
 body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
+
 .btn {
     font-size: 12px;
     font-weight: bold;
 }
+
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
@@ -31,53 +34,45 @@ header .main-header {
     background-color: rgba(0, 0, 255, 0.561);
     height: 100vh;
 }
+
 header .top-nav {
     border-bottom: 1px solid white;
     margin-bottom: 5px;
-     width:100%;
+    width: 100%;
+    transition: 1.2s all ease-in;
 }
 
-@media(max-width:1000px) {
-    .navbar .btn {
-        display: none;
-    }
-}
 
-@media(max-width:500px) {
-    header .top-nav span {
-        display: none;
-    }
-}
 header .navbar {
     background-color: none;
     color: white;
-    top: 60px !important;
+  top: 50px !important; 
+    transition: 0.5s all ease-in;
 }
 
 /* class for js  */
-.display{
+.display {
     display: none !important;
     opacity: 0 !important;
-   
+    transition: .5s all ease-in !important;
 }
-
 /* class for js   change the background*/
-.navbar-scrool{
+.navbar-scrool {
     background-color: #007bff;
-    color:#fff; 
+    color: #fff;
     top: 0 !important;
+    transition: .5s all ease-in !important;
 }
+
 /* class for js  */
-.toop{
-    top: 0 ;
+.toop {
+    top: 0;
 }
-
-
 
 header .navbar-brand {
     font-size: 28px;
     font-weight: 600;
-    transition: 1.5s all ease-out;
+    transition: .5s all ease-out;
 }
 
 header .navbar-nav {
@@ -91,11 +86,11 @@ header .navbar-nav .nav-link {
     transition: 0.5s all ease-in;
 }
 
-
 header .navbar-nav .nav-item:hover {
     border-bottom: 1px solid #fff;
 
 }
+
 header .navbar .nav-link:hover {
     color: white;
     border-bottom: 1px solid #fff;
@@ -125,10 +120,12 @@ header .navbar .nav-link:hover {
     padding-top: 150px;
     color: #fff;
 }
+
 .hero p {
     font-size: 20px;
     letter-spacing: 2;
 }
+
 .hero .btn-33 {
     background-color: deepskyblue;
     color: white;
@@ -141,34 +138,41 @@ header .navbar .nav-link:hover {
     width: 180px;
     transition: 0.8s all;
 }
+
 .hero .btn-33:hover {
     background-color: #fff;
     color: deepskyblue;
 }
+
 /* end the hero */
 
 /*  start catagory */
 .catagory {
     padding-top: 50px;
 }
+
 .catagory .head {
     color: rgba(0, 64, 255, 0.929);
 }
+
 .catagory .content {
     background-color: rgba(0, 191, 255, 0.109);
     padding: 20px;
     border-radius: 10px;
     transition: 0.5s all;
 }
-.catagory .content:hover{
+
+.catagory .content:hover {
     background-color: #dddd;
-    }
+}
+
 .catagory .content .icons {
     background-color: white;
     padding: 10px;
     height: 42px;
     border-radius: 10px;
 }
+
 .catagory .content .icons .icon {
     font-size: 25px;
     color: deepskyblue;
@@ -192,7 +196,7 @@ header .navbar .nav-link:hover {
 }
 
 /* the layer above the card */
-.news  .overlay{
+.news .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -204,14 +208,17 @@ header .navbar .nav-link:hover {
     transform: scale(0);
     transition: .3s ease;
 }
+
 .card:hover .overlay {
-transform: scale(1);
+    transform: scale(1);
 }
-.news .btn{
+
+.news .btn {
     transition: 0.8s all;
     font-weight: 600;
     border: none;
 }
+
 .news .btn:hover {
     background-color: #fff;
     color: deepskyblue;
@@ -219,13 +226,14 @@ transform: scale(1);
 
 /* start the section educatio */
 
-.educatio .card,.course .card {
+.educatio .card,
+.course .card {
     border: none;
     border-radius: 20px;
 }
+
 /* the layer above the card */
-.educatio  .overlay
-{
+.educatio .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -238,15 +246,29 @@ transform: scale(1);
     transition: .6s ease;
     border-radius: 20px;
 }
+
 .card:hover .overlay {
-transform: scale(1);
+    transform: scale(1);
 }
- .educatio .dollar{
+
+.educatio .iconn .icon{
+   width: 50px;
+   height: 50px;
+   background-color: #fff; 
+   margin:  0 auto;
+   border-radius: 50%;
+   font-size: 20px;
+   border: 1px solid #007bff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.educatio .dollar {
     border-top: 1px solid #ddd;
 }
 
 /* start the section course */
-.course .overlay{
+.course .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -257,7 +279,7 @@ transform: scale(1);
     height: 100%;
     transform: scale(0);
     transition: .5s ease;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
 /* start the section course */
@@ -267,103 +289,112 @@ transform: scale(1);
     background-size: cover;
     height: 100vh;
 }
+
 .learn-bg .main-learn {
     background-color: rgba(0, 0, 255, 0.561);
     height: 100vh;
     padding-top: 150px;
     margin: auto;
 }
-.learn-bg .btn{
+
+.learn-bg .btn {
     transition: 0.8s all;
     font-weight: bold;
 }
-.learn-bg .btn:hover{
+
+.learn-bg .btn:hover {
     background-color: #fff;
     color: deepskyblue;
 }
-.price .justify-content-between{
-    margin:10px;
+
+.price .justify-content-between {
+    margin: 10px;
 }
 
 
 /* start the section course */
-.about .imges video{
+.about .imges video {
     z-index: 3 !important;
-    box-shadow:  144px -28px 2px  6px #007bff1a;
+    box-shadow: 144px -28px 2px 6px #007bff1a;
 }
-@media(max-width:900px){
-    .about .imges video{
-        box-shadow:none
-    }
+
+
+
+.pricing .card,
+.news .card {
+    border: none;
+    transition: 1.2s all;
+    border-radius: 20px;
 
 }
-.pricing .card,
-.news .card
-{
-    border: none;
-transition: 1.2s all;
-border-radius: 20px;
- 
-}
-.news .card:hover, .pricing .card:hover{
+
+.news .card:hover,
+.pricing .card:hover {
     transform: translateY(-10px);
 }
 
-.pricing .card .card-body{
+.pricing .card .card-body {
     position: relative;
 
 }
 
 /* the layer above the card */
-.pricing .card .overlay{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #007bff39;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        transform: scale(0);
-        transition: .3s ease;
+.pricing .card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #007bff39;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
 }
+
 .card:hover .overlay {
     transform: scale(1);
-  }
+}
 
 
-  /* start the section testimoies */
-.testimoies{
+/* start the section testimoies */
+.testimoies {
     background-color: rgba(128, 128, 128, 0.528);
 
 }
-.sec-9{
+
+.sec-9 {
     background-color: #007bff;
 }
-  .testimoies .main-carousel{
+
+.testimoies .main-carousel {
     width: 250px;
     margin: auto;
     margin-bottom: 50px;
-   
+
 }
- .testimoies .carorse-11 img{
+
+.testimoies .carorse-11 img {
     border-radius: 50%;
     width: 150px;
     height: 164px;
 }
- .testimoies .carousel-indicators .dott{
-    border-radius:50% !important;
+
+.testimoies .carousel-indicators .dott {
+    border-radius: 50% !important;
     height: 20px !important;
     width: 20px !important;
 }
-.testimoies .textt{
+
+.testimoies .textt {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 /* start the footer */
-footer .icon{
+footer .icon {
     width: 50px;
     height: 33px;
     background-color: #fff;
@@ -372,20 +403,64 @@ footer .icon{
     align-items: center;
     border-radius: 50%;
 }
-footer .icon:hover{
-background-color: #00000091;
+
+footer .icon:hover {
+    background-color: #00000091;
 }
-footer .icon .small-icon:hover{
+footer .trans{
+    transition: 0.5s all ease-in-out}
+
+    footer .trans:hover{
+        transform: translateX(10px);
+        color: #fff;
+        border-bottom-right-radius:1px solid #fff;
+    }
+footer .icon .small-icon:hover {
     color: #fff;
 }
-footer .programing-name .name-languag{
-color: #ddddddb1;
+
+footer .programing-name .name-languag {
+    color: #ddddddb1;
 
 }
-footer  .img-gallary img{
+footer .programing-name .name-languag:hover {
+    color: #fff;
+
+}
+
+footer .img-gallary img {
     max-width: 100%;
     border-radius: 5px;
 }
+
 footer .number {
-    color: #ddddddb1;;
+    color: #ddddddb1;
+    ;
+}
+
+
+
+/* responsive part */
+
+
+@media(max-width:1000px) {
+    .navbar .btn {
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    header .top-nav span {
+        display: none;
+    }
+}
+
+
+
+
+@media(max-width:900px) {
+    .about .imges video {
+        box-shadow: none
+    }
+
 }
