@@ -1,4 +1,7 @@
 
+
+
+
 const cc=document.querySelector('.navbar');
 const addd=document.querySelector('.top-nav');
 
@@ -27,6 +30,12 @@ window.addEventListener('scroll',() => {
     }
 
 })
+
+
+
+
+
+
 
 /* طريقة تانية بدون عداد لانقاص top */
 

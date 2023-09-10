@@ -24,12 +24,21 @@ a {
 }
 
 header {
-    height: 100vh;
-    background-image: url(../img/istockphoto-1358014313-612x612.jpg);
+
+ background-image: url(../img/istockphoto-1358014313-612x612.jpg);
+    background-color: linear-gradient( to right, rgba(0, 255, 255, 0.359));
+    
+     height: 100vh; 
+    
+   /* background-image: url(../img/istockphoto-1358014313-612x612.jpg);  */
     background-repeat: no-repeat;
     background-size: cover;
 }
+header:hover{
+    background-color:linear-gradient( to right, transparent);
+    background-image:     url(../img/istockphoto-1358014313-612x612.jpg);;
 
+}
 header .main-header {
     background-color: rgba(0, 0, 255, 0.561);
     height: 100vh;
@@ -39,22 +48,23 @@ header .top-nav {
     border-bottom: 1px solid white;
     margin-bottom: 5px;
     width: 100%;
-    transition: 1.2s all ease-in;
+    transition: .2s all ease-in;
+    padding-bottom: 15px;
 }
 
 
 header .navbar {
     background-color: none;
     color: white;
-  top: 50px !important; 
-    transition: 0.5s all ease-in;
+  top: 60px !important; 
+    
 }
 
 /* class for js  */
 .display {
     display: none !important;
     opacity: 0 !important;
-    transition: .5s all ease-in !important;
+    
 }
 /* class for js   change the background*/
 .navbar-scrool {
@@ -289,14 +299,12 @@ header .navbar .nav-link:hover {
     background-size: cover;
     height: 100vh;
 }
-
 .learn-bg .main-learn {
     background-color: rgba(0, 0, 255, 0.561);
     height: 100vh;
     padding-top: 150px;
     margin: auto;
 }
-
 .learn-bg .btn {
     transition: 0.8s all;
     font-weight: bold;
@@ -318,16 +326,12 @@ header .navbar .nav-link:hover {
     box-shadow: 144px -28px 2px 6px #007bff1a;
 }
 
-
-
 .pricing .card,
 .news .card {
     border: none;
     transition: 1.2s all;
     border-radius: 20px;
-
 }
-
 .news .card:hover,
 .pricing .card:hover {
     transform: translateY(-10px);
@@ -412,11 +416,11 @@ footer .trans{
 
     footer .trans:hover{
         transform: translateX(10px);
-        color: #fff;
+        color: #000;
         border-bottom-right-radius:1px solid #fff;
     }
 footer .icon .small-icon:hover {
-    color: #fff;
+    color: #000;
 }
 
 footer .programing-name .name-languag {
@@ -424,7 +428,7 @@ footer .programing-name .name-languag {
 
 }
 footer .programing-name .name-languag:hover {
-    color: #fff;
+    color: #000;
 
 }
 
@@ -442,14 +446,14 @@ footer .number {
 
 /* responsive part */
 
-
-@media(max-width:1000px) {
-    .navbar .btn {
+@media(max-width:900px) {
+    .navbar.btn-33 {
         display: none;
     }
 }
 
-@media(max-width:500px) {
+
+@media(max-width:800px) {
     header .top-nav span {
         display: none;
     }
