@@ -25,24 +25,20 @@ a {
 
 header {
 
- background-image: url(../img/istockphoto-1358014313-612x612.jpg);
-    background-color: linear-gradient( to right, rgba(0, 255, 255, 0.359));
-    
+ background-image:   linear-gradient( to right, rgba(0, 0, 255, 0.661),#007bffa0),
+ url(../img/istockphoto-1358014313-612x612.jpg);
+  
      height: 100vh; 
-    
    /* background-image: url(../img/istockphoto-1358014313-612x612.jpg);  */
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.5s all ease-in-out;
 }
 header:hover{
-    background-color:linear-gradient( to right, transparent);
-    background-image:     url(../img/istockphoto-1358014313-612x612.jpg);;
+ /*    background-image:   linear-gradient( to left, rgba(0, 0, 255, 0.461),#007bff3d),
+    url(../img/istockphoto-1358014313-612x612.jpg); */
+}
 
-}
-header .main-header {
-    background-color: rgba(0, 0, 255, 0.561);
-    height: 100vh;
-}
 
 header .top-nav {
     border-bottom: 1px solid white;
@@ -57,9 +53,12 @@ header .navbar {
     background-color: none;
     color: white;
   top: 60px !important; 
-    
+    z-index: 3;
 }
 
+header .navbar-toggler-icon{
+    background-color: #007bff !important;
+}
 /* class for js  */
 .display {
     display: none !important;
@@ -84,7 +83,6 @@ header .navbar-brand {
     font-weight: 600;
     transition: .5s all ease-out;
 }
-
 header .navbar-nav {
     text-align: center;
 }
@@ -116,7 +114,7 @@ header .navbar .nav-link:hover {
     outline: none;
     cursor: pointer;
     transition: 0.8s all;
-}
+} 
 
 .btn-22:hover {
     background-color: #fff;
@@ -151,7 +149,7 @@ header .navbar .nav-link:hover {
 
 .hero .btn-33:hover {
     background-color: #fff;
-    color: deepskyblue;
+    color: #007bff;
 }
 
 /* end the hero */
@@ -169,11 +167,12 @@ header .navbar .nav-link:hover {
     background-color: rgba(0, 191, 255, 0.109);
     padding: 20px;
     border-radius: 10px;
-    transition: 0.5s all;
+    transition: 0.8s all;
 }
 
 .catagory .content:hover {
     background-color: #dddd;
+    transform: translateY(-10px);
 }
 
 .catagory .content .icons {
@@ -181,28 +180,46 @@ header .navbar .nav-link:hover {
     padding: 10px;
     height: 42px;
     border-radius: 10px;
+    transition: 0.5s all;
 }
 
 .catagory .content .icons .icon {
     font-size: 25px;
-    color: deepskyblue;
+    color: #007bff;
 }
 
+
+.catagory .content .icons:hover {
+    background-color: #007bff;
+   
+}
+
+.catagory .content .icons .icon:hover {
+    color: #fff;
+}
 
 /* start the section news */
 .news {
     background-color: rgba(128, 128, 128, 0.228);
     margin-top: 50px;
     padding: 20px;
+    
 }
-
+.news .imges{
+    transition: 0.9s all ease-in-out;
+}
 .news .imges img {
     position: relative;
     top: -120px;
     width: 100%;
     border-radius: 10px;
     background-color: deepskyblue;
-    padding: 5px
+    padding: 5px;
+    transition: 0.9s all ease-in-out;
+}
+.news .imges img:hover{
+    transition: 0.9s all ease-in-out;
+    transform: translateY(-10px) scale(1.1);
 }
 
 /* the layer above the card */
@@ -239,7 +256,12 @@ header .navbar .nav-link:hover {
 .educatio .card,
 .course .card {
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
+    transition: 0.9s all;
+}
+.educatio .card:hover,
+.course .card:hover {
+    transform: scale(1.1);
 }
 
 /* the layer above the card */
@@ -273,6 +295,8 @@ header .navbar .nav-link:hover {
    justify-content: center;
    align-items: center;
 }
+
+
 .educatio .dollar {
     border-top: 1px solid #ddd;
 }
@@ -291,7 +315,9 @@ header .navbar .nav-link:hover {
     transition: .5s ease;
     border-radius: 20px;
 }
-
+.course .card-img-top:hover{
+    border-radius: 30px;
+}
 /* start the section course */
 .learn-bg {
     background-image: url(../img/istockphoto-1411454425-612x612.jpg);
@@ -304,6 +330,12 @@ header .navbar .nav-link:hover {
     height: 100vh;
     padding-top: 150px;
     margin: auto;
+    transition: 0.5s all;
+}
+.learn-bg .main-learn:hover{
+    background-color: rgba(0, 0, 255, 0.361);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
 }
 .learn-bg .btn {
     transition: 0.8s all;
@@ -324,17 +356,20 @@ header .navbar .nav-link:hover {
 .about .imges video {
     z-index: 3 !important;
     box-shadow: 144px -28px 2px 6px #007bff1a;
+    transition: 0.5s;
+    transition-delay: 0.4s;
 }
 
 .pricing .card,
 .news .card {
     border: none;
     transition: 1.2s all;
-    border-radius: 20px;
+    
 }
 .news .card:hover,
 .pricing .card:hover {
     transform: translateY(-10px);
+    border-radius: 30px;
 }
 
 .pricing .card .card-body {
@@ -358,6 +393,7 @@ header .navbar .nav-link:hover {
 
 .card:hover .overlay {
     transform: scale(1);
+    border-radius: 30px;
 }
 
 
