@@ -49,13 +49,11 @@ header .navbar {
     background-color: none;
     color: white;
   top: 60px !important; 
-    z-index: 3;
+    z-index: 3 !important;
     width: 100vw !important;
 }
 
-header .navbar-toggler-icon{
-    background-color: #007bff !important;
-}
+
 /* class for js  */
 .display {
     display: none !important;
