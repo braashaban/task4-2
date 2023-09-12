@@ -27,23 +27,19 @@ header {
 
  background-image:   linear-gradient( to right, rgba(0, 0, 255, 0.661),#007bffa0),
  url(../img/istockphoto-1358014313-612x612.jpg);
-  
+  width: 100vw;
      height: 100vh; 
    /* background-image: url(../img/istockphoto-1358014313-612x612.jpg);  */
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.5s all ease-in-out;
 }
-header:hover{
- /*    background-image:   linear-gradient( to left, rgba(0, 0, 255, 0.461),#007bff3d),
-    url(../img/istockphoto-1358014313-612x612.jpg); */
-}
 
 
 header .top-nav {
     border-bottom: 1px solid white;
     margin-bottom: 5px;
-    width: 100%;
+    width: 100vw;
     transition: .2s all ease-in;
     padding-bottom: 15px;
 }
@@ -54,6 +50,7 @@ header .navbar {
     color: white;
   top: 60px !important; 
     z-index: 3;
+    width: 100vw !important;
 }
 
 header .navbar-toggler-icon{
@@ -251,6 +248,10 @@ header .navbar .nav-link:hover {
     color: deepskyblue;
 }
 
+
+.card{
+    width: 90% !important;
+}
 /* start the section educatio */
 
 .educatio .card,
@@ -486,8 +487,10 @@ footer .number {
     .navbar.btn-33 {
         display: none;
     }
+    .about .imges video {
+        box-shadow: none
+    }
 }
-
 
 @media(max-width:800px) {
     header .top-nav span {
@@ -497,10 +500,3 @@ footer .number {
 
 
 
-
-@media(max-width:900px) {
-    .about .imges video {
-        box-shadow: none
-    }
-
-}
